@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dnsperf-deployment
+  labels:
+    app: dnsperf
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dnsperf
+  template:
+    metadata:
+      labels:
+        app: dnsperf
+    spec:
+      containers:
+      - name: dnsperf
+        image: biennt/dnsperf
+        env:
+        - name: datafile
+          value: "example2k.txt"
+        - name: server
+          value: "192.168.100.11"
+        - name: thread
+          value: "4"

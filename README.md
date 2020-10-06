@@ -5,7 +5,7 @@ docker build -t biennt/dnsperf .
 ```
 run as docker container
 ```
-docker run -it --name dnsperf1 -e 'datafile=example10m.txt' -e 'server=10.0.20.201' -e 'thread=2' biennt/dnsperf
+docker run -it --name dnsperf1 -e 'datafile=example2k.txt' -e 'server=10.0.20.201' -e 'thread=2' biennt/dnsperf
 ```
 or deploy to k8s
 ```

@@ -1,4 +1,4 @@
-# dnsperf container image (bien.nguyen@f5.com)
+# DNS Performance testing container image (bien.nguyen@f5.com)
 Build the container image
 ```
 docker build -t biennt/dnsperf .

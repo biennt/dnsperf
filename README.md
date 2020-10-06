@@ -1,4 +1,4 @@
-# dnsperf
+# dnsperf container image (bien.nguyen@f5.com)
 Build the container image
 ```
 docker build -t biennt/dnsperf .
